@@ -8,9 +8,12 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header >
+        <div class="logo">
+            <img src="./assets/logo-icon.svg" alt="">
+        </div>
         <nav class="navbar">
-            <ol>
+            <ul class="flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
@@ -18,6 +21,95 @@
             </ol>
         </nav>
     </header>
+
+    <div class="main-content-area grid">
+        <div class="sidebar">
+            <ul>
+                <li class="sidebar-button">Calculator</li>
+                <li class="sidebar-button">Currency Converter</li>
+                <li class="sidebar-button">Unit Converter</li>
+                <li class="sidebar-button">Drawing Board</li>
+            </ul>
+        </div>
+        <div class="utility-area flex">
+            <div class="calculator">
+                <div class="screen">
+                    <div id="input-screen">16x5</div>
+                    <div id="result-screen">80</div>
+                </div>
+                <div class="radio-btns-top">
+                    <div class="calculator-type">
+                        <input type="radio" name="calcType" id="simple">
+                        <label for="simple">Simple</label>                    
+                        <input type="radio" name="calcType" id="scientific">                    
+                        <label for="scientific">Scientific</label>
+                    </div>
+                    <div class="angle-units">
+                        <input type="radio" name="angle" id="deg">
+                        <label for="deg">Deg</label>                    
+                        <input type="radio" name="angle" id="rad">                    
+                        <label for="deg">Rad</label>
+                    </div>
+                </div>
+                
+                <div class="scientific buttons">
+                    
+                    <button class="button">sin</button>
+                    <button class="button">cos</button>
+                    <button class="button">tan</button>
+                    <button class="button">&#120587;</button>
+                    <button class="button">e</button>
+
+                    <button class="button">sin<sup>-1</sup></button>
+                    <button class="button">cos<sup>-1</sup></button>
+                    <button class="button">tan<sup>-1</sup></button>
+                    <button class="button">e<sup>x</sup></button>
+                    <button class="button">10<sup>x</sup></button>
+
+                    <button class="button">x<sup>y</sup></button>
+                    <button class="button">x<sup>3</sup></button>
+                    <button class="button">x<sup>2</sup></button>
+                    <button class="button">ln</button>
+                    <button class="button">log</button>
+
+                    <button class="button"><sup>y</sup>&#8730;x</button>
+                    <button class="button"><sup>3</sup>&#8730;x</button>
+                    <button class="button">&#8730;x</button>
+                    <button class="button">1/x</button>
+                    <button class="button">n!</button>
+
+                </div>
+                <div class="simple buttons">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button">+</button>
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">-</button>
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">x</button>
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button"><u>+</u></button>
+                    <button class="button">RND</button>
+                    <button class="button">Clear</button>
+                    <button class="button">Del</button>
+
+
+                    
+                </div>
+            </div>
+            <div class="currency-converter"></div>
+            <div class="unit-converter"></div>
+            <div class="drawing-board"></div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
