@@ -119,3 +119,7 @@ header {
 .d-block {
     display: block;
 }
+
+.displayNone {
+    display: none;
+}
