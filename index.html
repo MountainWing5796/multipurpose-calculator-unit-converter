@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientific Calculator and Unit Converter</title>
+    <title>Portfolio Site of Projects</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -26,25 +26,25 @@
         <div class="sidebar">
             <ul>
                 <li class="sidebar-button">Calculator</li>
-                <li class="sidebar-button">Currency Converter</li>
-                <li class="sidebar-button">Unit Converter</li>
+                <li class="sidebar-button">To Do List</li>
+                <li class="sidebar-button">Weather App</li>
                 <li class="sidebar-button">Drawing Board</li>
             </ul>
         </div>
         <div class="utility-area flex">
-            <div class="calculator">
-                <div class="screen">
-                    <div id="input-screen">16x5</div>
-                    <div id="result-screen">80</div>
+            <div class="calculator" data-calculator>
+                <div class="screen" data-screen>
+                    <div id="input-screen" data-input-screen>0</div>
+                    <div id="result-screen" data-result-screen></div>
                 </div>
-                <div class="radio-btns-top">
-                    <div class="calculator-type">
-                        <input type="radio" name="calcType" id="simple">
+                <div class="radio-btns-top" data-radio-btns-top>
+                    <div class="calculator-type" data-calculator-type>
+                        <input type="radio" name="calcType" id="simple" data-simple-radio>
                         <label for="simple">Simple</label>                    
-                        <input type="radio" name="calcType" id="scientific" checked>                    
+                        <input type="radio" name="calcType" id="scientific" data-scientific-radio checked>                    
                         <label for="scientific">Scientific</label>
                     </div>
-                    <div class="angle-units">
+                    <div class="angle-units" data-angle-units>
                         <input type="radio" name="angle" id="deg" checked>
                         <label for="deg">Deg</label>                    
                         <input type="radio" name="angle" id="rad">                    
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 
-                <div class="scientific buttons">
+                <div class="scientific buttons" data-scientific-buttons>
                     
                     <button class="button">sin</button>
                     <button class="button">cos</button>
@@ -79,20 +79,20 @@
                     <button class="button">n!</button>
 
                 </div>
-                <div class="simple buttons">
-                    <button class="button">7</button>
-                    <button class="button">8</button>
-                    <button class="button">9</button>
+                <div class="simple buttons" data-simple-buttons>
+                    <button class="button" data-number="7">7</button>
+                    <button class="button" data-number="8">8</button>
+                    <button class="button" data-number="9">9</button>
                     <button class="button">+</button>
-                    <button class="button">4</button>
-                    <button class="button">5</button>
-                    <button class="button">6</button>
+                    <button class="button" data-number="4">4</button>
+                    <button class="button" data-number="5">5</button>
+                    <button class="button" data-number="6">6</button>
                     <button class="button">-</button>
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
+                    <button class="button" data-number="1">1</button>
+                    <button class="button" data-number="2">2</button>
+                    <button class="button" data-number="3">3</button>
                     <button class="button">x</button>
-                    <button class="button">0</button>
+                    <button class="button" data-number="0">0</button>
                     <button class="button">.</button>
                     <button class="button"><u>+</u></button>
                     <button class="button">RND</button>
